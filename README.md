@@ -50,3 +50,8 @@ lean deploy
 * [Node.js SDK API](https://github.com/leancloud/leanengine-node-sdk/blob/master/API.md)
 * [命令行工具使用指南](https://leancloud.cn/docs/leanengine_cli.html)
 * [云引擎常见问题和解答](https://leancloud.cn/docs/leanengine_faq.html)
+
+
+## 
+ADMOB_PUSH_KEY
+ADMOB_PUSH_SECRET

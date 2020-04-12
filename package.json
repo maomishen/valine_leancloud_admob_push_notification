@@ -15,7 +15,9 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "leancloud-storage": "^3.11.0",
-    "leanengine": "^3.3.2"
+    "leanengine": "^3.3.2",
+    "crypto": "0.0.3",
+    "request": "^2.51.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.7"
