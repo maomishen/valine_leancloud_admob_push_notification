@@ -2,8 +2,8 @@ const AV = require('leanengine')
 const fs = require('fs')
 const path = require('path')
 
-var pushClient = require("./api/pushClient");
-var PushWork = require("./api/PushWork");
+const pushClient = require('./api/pushClient')
+const PushWork = require('./api/PushWork')
 
 /**
  * 加载 functions 目录下所有的云函数
