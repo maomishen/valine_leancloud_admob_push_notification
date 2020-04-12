@@ -2,11 +2,8 @@ const AV = require('leanengine')
 const fs = require('fs')
 const path = require('path')
 
-var areaClient = require("./api/AreaClient");
-var deviceClient = require("./api/deviceClient");
 var pushClient = require("./api/pushClient");
 var PushWork = require("./api/PushWork");
-var statsClient = require("./api/statsClient");
 
 /**
  * 加载 functions 目录下所有的云函数
