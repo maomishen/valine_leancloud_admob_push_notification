@@ -312,16 +312,18 @@ PushWork.prototype.notify=1; //通知消息
 PushWork.prototype.custom=1; //透传消息
 
 //module.exports = pushWork;
-function  PushWork(plats, content, type) {
-  this.payload = {};
-  if(plats != null && (plats instanceof  Array)){
+class PushWork {
+  constructor(plats, content, type) {
+    this.payload = {};
+    if (plats != null && (plats instanceof Array)) {
       this.payload.plats = plats;
-  }
-  if(content != null && content != undefined){
+    }
+    if (content != null && content != undefined) {
       this.payload.content = content;
-  }
-  if(type != null  && (type == 1 || type == 2) ){
+    }
+    if (type != null && (type == 1 || type == 2)) {
       this.payload.type = type;
+    }
   }
 }
 
