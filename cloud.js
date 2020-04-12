@@ -1,17 +1,18 @@
-import { Cloud } from 'leanengine';
-import { readdirSync } from 'fs';
-import { join } from 'path';
-import { pushClient } from './api/pushClient';
-import { PushWork } from './api/PushWork';
+const AV = require('leanengine')
+const fs = require('fs')
+const path = require('path')
+
+var pushClient = require("api/pushClient");
+var PushWork = require("api/PushWork");
 
 /**
  * 加载 functions 目录下所有的云函数
  */
-readdirSync(join(__dirname, 'functions')).forEach( file => {
-  require(join(__dirname, 'functions', file))
+fs.readdirSync(path.join(__dirname, 'functions')).forEach( file => {
+  require(path.join(__dirname, 'functions', file))
 })
 
-Cloud.afterSave('Comment', async function(request) {
+AV.Cloud.afterSave('Comment', async function(request) {
 
   console.log(request);
 
