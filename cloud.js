@@ -2,7 +2,7 @@ const AV = require('leanengine')
 const fs = require('fs')
 const path = require('path')
 
-var pushClient = require("api/pushClient");
+var pushClient = require("api/PushClient");
 var PushWork = require("api/PushWork");
 
 /**
